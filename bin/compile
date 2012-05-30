@@ -13,6 +13,6 @@ cd $1
 
 echo "-----> Fetching buildpack files (20120530)"
 curl -L -s -o files.tar.gz https://github.com/downloads/alard/heroku-buildpack-phantomjs-wget/heroku-phantomjs-wget-files-20120530.tar.gz
-tar -zxf heroku-phantomjs-wget-files-20120530.tar.gz
-rm heroku-phantomjs-wget-files-20120530.tar.gz
+tar -zxf files.tar.gz
+rm files.tar.gz
 
