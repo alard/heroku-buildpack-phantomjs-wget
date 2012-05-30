@@ -11,8 +11,8 @@ indent() {
 # Go to build dir
 cd $1
 
-echo "-----> Fetching buildpack files (20120530d)"
-curl -L -s -o files.tar.gz https://github.com/downloads/alard/heroku-buildpack-phantomjs-wget/heroku-phantomjs-wget-files-20120530d.tar.gz
+echo "-----> Fetching buildpack files (20120530e)"
+curl -L -s -o files.tar.gz https://github.com/downloads/alard/heroku-buildpack-phantomjs-wget/heroku-phantomjs-wget-files-20120530e.tar.gz
 tar -zxf files.tar.gz
 rm files.tar.gz
 
