@@ -16,6 +16,13 @@ curl -L -s -o files.tar.gz https://github.com/downloads/alard/heroku-buildpack-p
 tar -zxf files.tar.gz
 rm files.tar.gz
 
+rm -rf phantomjs/ bin/phantomjs
+
+echo "-----> Fetching Phantomjs buildpack"
+curl -L -s -o phantomjs-buildpack-compile.sh "https://raw.github.com/stomita/heroku-buildpack-phantomjs/master/bin/compile"
+chmod +x phantomjs-buildpack-compile.sh
+./phantomjs-buildpack-compile.sh $1 $2
+
 echo "-----> Rebuilding font information cache"
 fc-cache -f
 
